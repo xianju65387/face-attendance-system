@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AttendenceWin</class>
+ <widget class="QMainWindow" name="AttendenceWin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>585</width>
+    <height>358</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>AttendenceWin</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="showWidget">
+       <attribute name="title">
+        <string>考勤图像</string>
+       </attribute>
+       <widget class="QLabel" name="picLb">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>281</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 170, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="RegisterWin" name="registerWidget">
+       <attribute name="title">
+        <string>注册窗口</string>
+       </attribute>
+      </widget>
+      <widget class="SelectWin" name="selectWidget">
+       <attribute name="title">
+        <string>查询</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RegisterWin</class>
+   <extends>QWidget</extends>
+   <header location="global">registerwin.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SelectWin</class>
+   <extends>QWidget</extends>
+   <header location="global">selectwin.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

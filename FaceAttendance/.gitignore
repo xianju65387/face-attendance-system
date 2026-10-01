@@ -1,0 +1,15 @@
+# 构建产物（能用 CMake 重新生成，且体积巨大）
+build/
+build-*/
+.qtcreator/
+CMakeLists.txt.user*
+
+# 运行数据：数据库和注册的人脸照片（含个人隐私，绝对不要传）
+*.db
+data/
+
+# 第三方库二进制
+*.dll
+*.a
+*.lib
+*.so

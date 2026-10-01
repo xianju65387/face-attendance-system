@@ -1,0 +1,20 @@
+# 1) 先忽略仓库根目录下的一切
+/*
+# 2) 再放行这两个工程目录
+!/AttendenceServer/
+!/FaceAttendance/
+# 3) 放行这个忽略文件本身（以及以后可能加的 README）
+!/.gitignore
+!/README.md
+
+# 4) 工程内部的构建产物和运行数据不要
+build/
+build-*/
+.qtcreator/
+CMakeLists.txt.user*
+*.db
+data/
+*.dll
+*.a
+*.lib
+*.so
